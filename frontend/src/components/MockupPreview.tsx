@@ -1,3 +1,4 @@
+import React from "react";
 import "./MockupPreview.css";
 
 function MiniBar({ route }: { route: string }) {
@@ -272,7 +273,7 @@ function SettingsMockup({ route }: { route: string }) {
   );
 }
 
-const MOCKUP_MAP: Record<string, () => JSX.Element> = {
+const MOCKUP_MAP: Record<string, () => React.JSX.Element> = {
   dashboard:                    () => <DashboardMockup />,
   "fristen-kalender":           () => <CalendarMockup />,
   "mengenmeldung-verpackg":     () => <MengenmeldungMockup route="/meldungen/verpackg" />,
