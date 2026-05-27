@@ -10,6 +10,7 @@ interface Props {
 
 export function MessageBubble({ message }: Props) {
   const isUser = message.role === "user";
+  const visibleSources = message.sources?.filter(s => s.relevance_score > 0) ?? [];
 
   return (
     <div className={`message-wrapper ${isUser ? "user" : "assistant"}`}>
@@ -57,17 +58,17 @@ export function MessageBubble({ message }: Props) {
           </div>
         )}
 
-        {!isUser && message.sources && message.sources.length > 0 && (
+        {!isUser && visibleSources.length > 0 && (
           <div className="sources-section">
             <p className="sources-label">
               <svg viewBox="0 0 16 16" fill="none" width="12" height="12">
                 <path d="M2 3h12M2 6h12M2 9h7" stroke="currentColor"
                   strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
-              Quellen ({message.sources.length})
+              Quellen ({visibleSources.length})
             </p>
             <div className="sources-list">
-              {message.sources.map((src, i) => (
+              {visibleSources.map((src, i) => (
                 <SourceCard key={src.id} source={src} index={i + 1} />
               ))}
             </div>
