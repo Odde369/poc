@@ -5,13 +5,24 @@ from collections import Counter
 
 _index = None
 
+_STOPWORDS = {
+    "was", "ist", "ein", "eine", "einer", "einem", "einen", "eines",
+    "der", "die", "das", "dem", "den", "des",
+    "und", "oder", "aber", "auch", "nicht", "noch",
+    "in", "im", "an", "am", "auf", "aus", "bei", "mit", "nach",
+    "von", "vor", "zu", "zum", "zur", "für", "über", "unter",
+    "er", "sie", "es", "wir", "ihr", "ich", "du",
+    "sein", "sind", "wird", "werden", "haben", "hat", "wurde",
+    "kann", "wie", "als", "dann", "wenn", "sich", "je",
+}
+
 
 def _tokenize(text: str) -> list[str]:
-    return text.lower().split()
+    return [t for t in text.lower().split() if t not in _STOPWORDS and len(t) > 1]
 
 
 def _build_index(chunks: list[dict]) -> dict:
-    doc_tokens = [_tokenize(c["content"] + " " + (c["title"] + " ") * 3) for c in chunks]
+    doc_tokens = [_tokenize(c["content"] + " " + c["title"] + " " + c["title"]) for c in chunks]
 
     N = len(chunks)
     df: Counter = Counter()
