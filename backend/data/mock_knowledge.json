@@ -502,5 +502,41 @@
     "title": "FAQ: Wo finde ich meine LUCID-Registrierungsnummer?",
     "category": "FAQ",
     "content": "Ihre LUCID-Registrierungsnummer (Format: DE-XXXXXXXXX-XX) finden Sie: 1. Im LUCID-Portal (lucid.verpackungsregister.org) nach Login unter 'Mein Konto'. 2. In der Registrierungsbestätigung, die die ZSVR per E-Mail geschickt hat. 3. Im öffentlichen LUCID-Register: Suche nach Firmenname oder Markenname. In EPR Cloud: Hinterlegen Sie Ihre LUCID-Nummer unter Registrierungen → LUCID. Das System prüft automatisch die Gültigkeit. Die LUCID-Nummer muss auf allen Angeboten und Rechnungen angegeben werden, wenn Sie systembeteiligungspflichtige Verpackungen verwenden. Auf Amazon: Muss im Seller Central unter Compliance-Informationen hinterlegt werden."
+  },
+  {
+    "id": "zertifikat-001",
+    "title": "Gültigkeit von EPR-Zertifikaten und Registrierungen – Überblick",
+    "category": "Zertifikate und Gültigkeit",
+    "content": "EPR-Registrierungen und Zertifikate haben unterschiedliche Gültigkeitsdauern: LUCID (VerpackG): Unbefristete Registrierung – kein automatisches Ablaufdatum, aber jährliche Lizenzierung beim dualen System und ggf. Vollständigkeitserklärung (Frist: 15. Mai). EAR (ElektroG): Unbefristete Registrierung – kein automatisches Ablaufdatum, aber jährlicher Mengenbericht (Frist: 30. April). BattG (Batteriegesetz): Unbefristete Registrierung beim Umweltbundesamt – jährliche Mengenmeldung nötig. PRO-Lizenzierungsverträge: Laufen i.d.R. 1 Jahr (Vertragszeitraum 1. Januar–31. Dezember), automatische Verlängerung möglich. Frankreich (CITEO): Zertifikat wird jährlich nach Abschluss der Mengenmeldung ausgestellt. UK (PRO-Compliance-Certificate): Jährlich, spätestens zum 31. Januar des Folgejahres. In EPR Cloud werden alle Ablaufdaten und Verlängerungsfristen automatisch im Fristen-Dashboard angezeigt."
+  },
+  {
+    "id": "zertifikat-002",
+    "title": "LUCID-Registrierung: Gültigkeit, Verlängerung und Aktualisierung",
+    "category": "Zertifikate und Gültigkeit",
+    "content": "Die LUCID-Registrierungsnummer (Format: DE-XXXXXXXXX-XX) hat kein automatisches Ablaufdatum. Sie bleibt gültig, solange das Unternehmen aktiv ist und seine Pflichten erfüllt. Wann muss die LUCID-Registrierung aktualisiert werden? Bei Umfirmierung oder Namensänderung, bei Änderung der Rechtsform, bei Änderung der vertretungsberechtigten Person, bei Aufnahme neuer Produktkategorien oder Materialien, bei Aufgabe des Geschäftsbetriebs (Löschpflicht!). Jährliche Pflichten trotz unbefristeter Registrierung: Systembeteiligung (Lizenzierung beim dualen System) muss für jedes Kalenderjahr aktiv sein. Vollständigkeitserklärung bis 15. Mai (bei Überschreitung der Mengenschwellen). Konsequenz bei fehlender Verlängerung der Systembeteiligung: Kein aktiver Lizenzvertrag = Ordnungswidrigkeit nach § 34 VerpackG (bis 200.000 € Bußgeld)."
+  },
+  {
+    "id": "zertifikat-003",
+    "title": "EAR-Registrierung (ElektroG): Gültigkeit und jährliche Pflichten",
+    "category": "Zertifikate und Gültigkeit",
+    "content": "Die EAR-Registrierungsnummer (Format: WEEE-DE-XXXXXXXXX) bei der Stiftung Elektro-Altgeräte Register (Stiftung EAR) ist unbefristet – sie läuft nicht automatisch ab. Jährliche Pflichten: 1. Erstmals und jährlich bis 30. April: Einreichung der Gerätemengen des Vorjahres an die Stiftung EAR (Jahresbericht nach § 27 ElektroG). 2. Abholkoordination: Hersteller müssen Altgeräteabholungen der Kommunen gemäß Zuteilung durch EAR ermöglichen. 3. Garantienachweis: Hersteller müssen jährlich eine Garantie (Bankbürgschaft, Versicherung) hinterlegen, die die Rücknahme- und Recyclingkosten absichert. Wann muss EAR-Registrierung geändert werden? Bei Änderung der Produktkategorien (z.B. neue Geräteklasse), bei Firmenwechsel. Fehlende Jahresberichte führen zu Ordnungswidrigkeiten (bis 100.000 €) und zur vorübergehenden Sperrung der Registrierung."
+  },
+  {
+    "id": "zertifikat-004",
+    "title": "PRO-Vertragsklauseln: Laufzeit, Kündigung und Verlängerung",
+    "category": "Zertifikate und Gültigkeit",
+    "content": "Lizenzierungsverträge mit dualen Systemen (Deutschland) und PROs (international) haben folgende typische Laufzeiten: Deutschland (duale Systeme): Vertragszeitraum 1. Januar bis 31. Dezember. Kündigung: i.d.R. bis 30. September zum Jahresende. Ohne Kündigung automatische Verlängerung um 1 Jahr. Abrechnung: Vorauszahlung basierend auf Vorjahresmengen, Jahresendabrechnung auf Basis der tatsächlichen Mengen. Frankreich (CITEO): Halbjährliche Abrechnung, Kündigung bis 31. Oktober. Österreich (ARA): Jahresvertrag, Kündigung bis 30. September. Niederlande (Afvalfonds): Jährlich, Kündigung 3 Monate vor Jahresende. Wichtig: Bei Kündigung eines PRO-Vertrags muss sofort ein Anschlussvertrag mit einem anderen System abgeschlossen werden – eine Lücke in der Systembeteiligung ist rechtswidrig. In EPR Cloud: Verträge hochladen und Kündigungsfristen automatisch im Kalender verwalten."
+  },
+  {
+    "id": "zertifikat-005",
+    "title": "Compliance-Zertifikate internationaler EPR-Systeme",
+    "category": "Zertifikate und Gültigkeit",
+    "content": "In verschiedenen Ländern werden Compliance-Zertifikate nach Erfüllung der EPR-Pflichten ausgestellt: Frankreich (CITEO): Jährliches Compliance-Zertifikat nach Abschluss der Mengenmeldung und Zahlung der Lizenzgebühren. Wird für Behördenanfragen und Marktplatz-Nachweise benötigt. UK (PRN/PERN): Producer Responsibility Obligation (PRO) stellt Packaging Recovery Notes (PRN) aus – gilt als Nachweis für erfüllte Recyclingquoten. Gültig pro Kalenderjahr. Österreich (ARA): Lizenzierungsnachweis jährlich nach Meldung und Zahlung. Belgien (Fost Plus): Mitgliedszertifikat jährlich. Schweden (FTI/El-Kretsen): Jährlicher Compliance-Bericht nach Meldung. Deutschland: Kein separates Zertifikat, aber öffentliche LUCID-Einträge und VE-Testate gelten als Nachweis. Wofür brauche ich diese Zertifikate? Amazon und andere Marktplätze verlangen Compliance-Nachweise. Bei Behördenprüfungen oder Lieferantenaudits. Für Jahresberichte und CSRD-Berichterstattung. EPR Cloud: Alle Zertifikate zentral hochladen und nach Ablauf automatisch erinnert werden."
+  },
+  {
+    "id": "zertifikat-006",
+    "title": "FAQ: Wie lange ist meine LUCID/EAR-Registrierung gültig?",
+    "category": "FAQ",
+    "content": "LUCID-Registrierung (VerpackG): Unbefristet – kein automatisches Ablaufdatum. Die Registrierungsnummer bleibt gültig, solange das Unternehmen aktiv ist. Aber: Die jährliche Systembeteiligung (Lizenz beim dualen System) muss für jedes Kalenderjahr separat aktiviert und bezahlt werden. EAR-Registrierung (ElektroG): Unbefristet – kein automatisches Ablaufdatum. Aber: Jährlicher Mengenbericht bis 30. April und Garantienachweis müssen jährlich eingereicht werden. BattG-Registrierung (Batteriegesetz): Unbefristet – jährliche Mengenmeldung beim Umweltbundesamt. PRO-Lizenzverträge: Laufen 1 Jahr (1. Januar–31. Dezember). Kündigung bis 30. September, sonst automatische Verlängerung. Zusammenfassung: Die Registrierung selbst läuft nicht ab, aber die damit verbundenen jährlichen Pflichten (Mengenmeldung, Lizenzierung, Garantie) müssen jedes Jahr erfüllt werden. EPR Cloud erinnert automatisch an alle Fristen."
   }
 ]
