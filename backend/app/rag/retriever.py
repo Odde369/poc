@@ -27,9 +27,20 @@ def retrieve(query: str, n_results: int = 5) -> list[SourceChunk]:
         term: (count / total) * idf.get(term, 0) for term, count in tf.items()
     }
 
-    scores = [
-        (i, _cosine_similarity(vectors[i], query_vec)) for i in range(len(chunks))
-    ]
+    scores = []
+    for i, chunk in enumerate(chunks):
+        tfidf_score = _cosine_similarity(vectors[i], query_vec)
+
+        # Title keyword bonus: boost docs whose title contains query terms
+        title_lower = chunk["title"].lower()
+        category_lower = chunk["category"].lower()
+        title_bonus = sum(
+            0.3 for term in query_tokens
+            if term in title_lower or term in category_lower
+        )
+
+        scores.append((i, tfidf_score + title_bonus))
+
     scores.sort(key=lambda x: x[1], reverse=True)
 
     sources = []
@@ -41,7 +52,7 @@ def retrieve(query: str, n_results: int = 5) -> list[SourceChunk]:
                 title=chunk["title"],
                 content=chunk["content"],
                 category=chunk["category"],
-                relevance_score=round(score, 4),
+                relevance_score=round(min(score, 1.0), 4),
             )
         )
 

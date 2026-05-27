@@ -1,6 +1,7 @@
 import json
 import os
 import math
+import re
 from collections import Counter
 
 _index = None
@@ -10,7 +11,7 @@ _STOPWORDS = {
     "der", "die", "das", "dem", "den", "des",
     "und", "oder", "aber", "auch", "nicht", "noch",
     "in", "im", "an", "am", "auf", "aus", "bei", "mit", "nach",
-    "von", "vor", "zu", "zum", "zur", "für", "über", "unter",
+    "von", "vor", "zu", "zum", "zur", "fur", "uber", "unter",
     "er", "sie", "es", "wir", "ihr", "ich", "du",
     "sein", "sind", "wird", "werden", "haben", "hat", "wurde",
     "kann", "wie", "als", "dann", "wenn", "sich", "je",
@@ -18,7 +19,8 @@ _STOPWORDS = {
 
 
 def _tokenize(text: str) -> list[str]:
-    return [t for t in text.lower().split() if t not in _STOPWORDS and len(t) > 1]
+    tokens = re.findall(r"[a-zäöüßÄÖÜ0-9]+", text.lower())
+    return [t for t in tokens if t not in _STOPWORDS and len(t) > 1]
 
 
 def _build_index(chunks: list[dict]) -> dict:
@@ -30,7 +32,7 @@ def _build_index(chunks: list[dict]) -> dict:
         for term in set(tokens):
             df[term] += 1
 
-    idf = {term: math.log(N / (freq + 1)) for term, freq in df.items()}
+    idf = {term: math.log((N + 1) / (freq + 1)) + 0.5 for term, freq in df.items()}
 
     vectors = []
     for tokens in doc_tokens:
