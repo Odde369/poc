@@ -1,0 +1,182 @@
+[
+  {
+    "id": "dashboard",
+    "title": "Dashboard",
+    "description": "Übersicht über alle EPR-Pflichten, offene Aufgaben und anstehende Fristen",
+    "route": "/dashboard",
+    "icon": "grid",
+    "category": "Allgemein",
+    "keywords": ["dashboard", "übersicht", "startseite", "home", "aufgaben"]
+  },
+  {
+    "id": "fristen-kalender",
+    "title": "Fristen-Kalender",
+    "description": "Alle anstehenden Meldepflichten und Deadlines auf einen Blick",
+    "route": "/fristen",
+    "icon": "calendar",
+    "category": "Fristen",
+    "keywords": ["fristen", "kalender", "deadline", "termine", "fällig", "datum", "meldepflicht"]
+  },
+  {
+    "id": "mengenmeldung-verpackg",
+    "title": "Mengenmeldung – VerpackG",
+    "description": "Verpackungsmengen erfassen, prüfen und im LUCID-Portal melden",
+    "route": "/meldungen/verpackg",
+    "icon": "package",
+    "category": "Mengenmeldung",
+    "keywords": ["verpackg", "verpackungsgesetz", "mengenmeldung", "lucid", "verpackung", "menge", "lizenzierung", "vollständigkeitserklärung"]
+  },
+  {
+    "id": "mengenmeldung-elektrog",
+    "title": "Mengenmeldung – ElektroG",
+    "description": "Elektrogeräte-Mengen quartalsmäßig und jährlich an die Stiftung EAR melden",
+    "route": "/meldungen/elektrog",
+    "icon": "zap",
+    "category": "Mengenmeldung",
+    "keywords": ["elektrog", "elektrogeräte", "ear", "weee", "elektro", "meldung", "quartalsmeldung", "jahresmeldung"]
+  },
+  {
+    "id": "mengenmeldung-battg",
+    "title": "Mengenmeldung – Batterien",
+    "description": "Batteriemengen erfassen und an das Batterieregister melden",
+    "route": "/meldungen/batterien",
+    "icon": "battery",
+    "category": "Mengenmeldung",
+    "keywords": ["batterie", "batteriegesetz", "battg", "akkumulator", "grs", "meldung"]
+  },
+  {
+    "id": "pro-management",
+    "title": "PRO-Management",
+    "description": "Verträge mit dualen Systemen und PROs verwalten, Lizenzen und Kontingente einsehen",
+    "route": "/pro-management",
+    "icon": "briefcase",
+    "category": "PRO-Management",
+    "keywords": ["pro", "dual", "duales system", "vertrag", "lizenz", "grüner punkt", "interseroh", "lizenzierung", "kontingent"]
+  },
+  {
+    "id": "pro-vertraege",
+    "title": "PRO-Verträge",
+    "description": "Alle aktiven und abgelaufenen Verträge mit dualen Systemen einsehen und verwalten",
+    "route": "/pro-management/vertraege",
+    "icon": "file-text",
+    "category": "PRO-Management",
+    "keywords": ["vertrag", "verträge", "laufzeit", "ablauf", "pro", "dual"]
+  },
+  {
+    "id": "registrierung-lucid",
+    "title": "LUCID-Registrierung",
+    "description": "LUCID-Registrierungsnummer hinterlegen und Registrierungsstatus prüfen",
+    "route": "/registrierungen/lucid",
+    "icon": "shield",
+    "category": "Registrierungen",
+    "keywords": ["lucid", "registrierung", "zsvr", "verpackungsregister", "registrierungsnummer"]
+  },
+  {
+    "id": "registrierung-ear",
+    "title": "EAR-Registrierung",
+    "description": "WEEE-Registrierungsnummer bei der Stiftung EAR hinterlegen und verwalten",
+    "route": "/registrierungen/ear",
+    "icon": "shield",
+    "category": "Registrierungen",
+    "keywords": ["ear", "weee", "stiftung", "elektrogeräte", "registrierung", "registrierungsnummer", "elektrog"]
+  },
+  {
+    "id": "registrierung-batterie",
+    "title": "Batterie-Registrierung",
+    "description": "Batterieregister-Registrierung und GRS-Teilnahme verwalten",
+    "route": "/registrierungen/batterien",
+    "icon": "shield",
+    "category": "Registrierungen",
+    "keywords": ["batterie", "grs", "registrierung", "batterieregister"]
+  },
+  {
+    "id": "laender-deutschland",
+    "title": "Ländermodul – Deutschland",
+    "description": "EPR-Pflichten, Meldungen und Registrierungen für den deutschen Markt",
+    "route": "/laender/de",
+    "icon": "map-pin",
+    "category": "Länder",
+    "keywords": ["deutschland", "deutsch", "de", "german", "verpackg", "elektrog", "battg"]
+  },
+  {
+    "id": "laender-frankreich",
+    "title": "Ländermodul – Frankreich",
+    "description": "EPR-Pflichten für Frankreich: CITEO, Refashion, Eco-mobilier und weitere PROs",
+    "route": "/laender/fr",
+    "icon": "map-pin",
+    "category": "Länder",
+    "keywords": ["frankreich", "france", "citeo", "syderep", "fr", "french", "refashion"]
+  },
+  {
+    "id": "laender-oesterreich",
+    "title": "Ländermodul – Österreich",
+    "description": "EPR-Pflichten für Österreich: ARA-System, Registrierung und Mengenmeldung",
+    "route": "/laender/at",
+    "icon": "map-pin",
+    "category": "Länder",
+    "keywords": ["österreich", "austria", "ara", "at", "austrian"]
+  },
+  {
+    "id": "laender-polen",
+    "title": "Ländermodul – Polen",
+    "description": "EPR-Pflichten für Polen: BDO-Register, autorisierter Vertreter",
+    "route": "/laender/pl",
+    "icon": "map-pin",
+    "category": "Länder",
+    "keywords": ["polen", "poland", "bdo", "pl", "polish"]
+  },
+  {
+    "id": "dokumente",
+    "title": "Dokumentenverwaltung",
+    "description": "Registrierungsbestätigungen, Verträge, Testate und Jahresberichte zentral ablegen",
+    "route": "/dokumente",
+    "icon": "folder",
+    "category": "Dokumente",
+    "keywords": ["dokument", "dokumentenverwaltung", "datei", "upload", "bestätigung", "testat", "zertifikat"]
+  },
+  {
+    "id": "berichte",
+    "title": "Berichte & Reports",
+    "description": "Compliance-Reports, Mengenübersichten und Exportfunktionen für alle EPR-Pflichten",
+    "route": "/berichte",
+    "icon": "bar-chart",
+    "category": "Berichte",
+    "keywords": ["bericht", "report", "export", "auswertung", "statistik", "mengenübersicht", "compliance"]
+  },
+  {
+    "id": "import",
+    "title": "Datenimport",
+    "description": "Verpackungsmengen und Produktdaten per CSV oder ERP-Anbindung importieren",
+    "route": "/import",
+    "icon": "upload",
+    "category": "Allgemein",
+    "keywords": ["import", "csv", "upload", "daten", "erp", "sap", "anbindung", "schnittstelle"]
+  },
+  {
+    "id": "einstellungen-benutzer",
+    "title": "Benutzerverwaltung",
+    "description": "Nutzer einladen, Rollen und Zugriffsrechte verwalten",
+    "route": "/einstellungen/benutzer",
+    "icon": "users",
+    "category": "Einstellungen",
+    "keywords": ["benutzer", "nutzer", "rollen", "rechte", "einladen", "team", "zugriffsrechte", "admin"]
+  },
+  {
+    "id": "einstellungen-api",
+    "title": "API & Integrationen",
+    "description": "API-Keys verwalten und ERP-Integrationen konfigurieren",
+    "route": "/einstellungen/api",
+    "icon": "code",
+    "category": "Einstellungen",
+    "keywords": ["api", "integration", "schnittstelle", "erp", "key", "token", "sap", "salesforce"]
+  },
+  {
+    "id": "einstellungen-benachrichtigungen",
+    "title": "Benachrichtigungen",
+    "description": "E-Mail-Erinnerungen für Fristen und Meldepflichten konfigurieren",
+    "route": "/einstellungen/benachrichtigungen",
+    "icon": "bell",
+    "category": "Einstellungen",
+    "keywords": ["benachrichtigung", "erinnerung", "email", "e-mail", "alarm", "frist", "notification"]
+  }
+]

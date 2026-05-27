@@ -1,0 +1,166 @@
+/* ---- Mockup Preview Frame ---- */
+.mockup-frame {
+  font-size: 10px;
+  line-height: 1.3;
+  background: #f7f8fc;
+  border-radius: 6px;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+.mockup-bar {
+  background: linear-gradient(135deg, #1a3c6e, #1e4fa8);
+  color: rgba(255,255,255,.7);
+  padding: 4px 8px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mockup-bar-dots { display: flex; gap: 3px; }
+.mockup-bar-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: rgba(255,255,255,.35);
+}
+.mockup-bar-url {
+  background: rgba(255,255,255,.15);
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 8px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mockup-content { padding: 8px 10px; }
+
+/* KPI row */
+.mockup-kpi-row { display: flex; gap: 6px; margin-bottom: 8px; }
+.mockup-kpi {
+  flex: 1; border-radius: 5px; padding: 5px 6px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.mockup-kpi.red    { background: #fff1f1; border: 1px solid #fca5a5; }
+.mockup-kpi.green  { background: #f0fdf4; border: 1px solid #86efac; }
+.mockup-kpi.blue   { background: #eff6ff; border: 1px solid #93c5fd; }
+.mockup-kpi.orange { background: #fff7ed; border: 1px solid #fdba74; }
+.mockup-kpi-num  { font-size: 14px; font-weight: 700; color: #1a2540; }
+.mockup-kpi-label { font-size: 8px; color: #6b78a8; }
+
+/* Bar chart */
+.mockup-chart { display: flex; align-items: flex-end; gap: 3px; height: 36px; margin-bottom: 4px; }
+.mockup-bar-item {
+  flex: 1; border-radius: 2px 2px 0 0;
+  background: linear-gradient(180deg, #1e4fa8, #3b72d4);
+  opacity: 0.8;
+}
+.mockup-chart-labels { display: flex; gap: 3px; }
+.mockup-chart-label { flex: 1; font-size: 7px; color: #9098a8; text-align: center; }
+
+/* Calendar */
+.mockup-calendar-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 6px;
+}
+.mockup-cal-title { font-weight: 700; color: #1a2540; font-size: 10px; }
+.mockup-cal-nav { color: #6b78a8; font-size: 9px; }
+.mockup-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.mockup-cal-day {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  border-radius: 3px; font-size: 8px; color: #3a4566;
+}
+.mockup-cal-day.header { color: #9098a8; font-weight: 600; }
+.mockup-cal-day.today  { background: #1e4fa8; color: #fff; font-weight: 700; }
+.mockup-cal-day.red    { background: #fee2e2; color: #b91c1c; font-weight: 600; }
+.mockup-cal-day.yellow { background: #fef9c3; color: #a16207; font-weight: 600; }
+.mockup-cal-day.green  { background: #dcfce7; color: #166534; }
+
+/* Form */
+.mockup-form-row { display: flex; gap: 6px; margin-bottom: 5px; align-items: center; }
+.mockup-form-label { width: 70px; color: #6b78a8; font-size: 8px; flex-shrink: 0; }
+.mockup-form-input {
+  flex: 1; background: #fff; border: 1px solid #d4daf0; border-radius: 3px;
+  padding: 3px 6px; font-size: 8px; color: #1a2540;
+}
+.mockup-form-input.filled { border-color: #1e4fa8; color: #1a2540; }
+.mockup-form-btn {
+  margin-top: 4px; background: linear-gradient(135deg, #1a3c6e, #1e4fa8);
+  color: #fff; border-radius: 4px; padding: 4px 10px; font-size: 8px;
+  font-weight: 600; display: inline-block;
+}
+.mockup-form-section {
+  font-size: 8px; font-weight: 700; color: #1a3c6e;
+  margin-bottom: 4px; padding-bottom: 2px; border-bottom: 1px solid #e4e8f5;
+}
+
+/* Table */
+.mockup-table { width: 100%; border-collapse: collapse; font-size: 8px; }
+.mockup-table th {
+  background: #eef1fb; color: #1a3c6e; font-weight: 700;
+  padding: 3px 5px; text-align: left; border-bottom: 1px solid #d5daf0;
+}
+.mockup-table td { padding: 3px 5px; color: #3a4566; border-bottom: 1px solid #f0f2f9; }
+.mockup-table tr:last-child td { border-bottom: none; }
+.mockup-badge {
+  display: inline-block; padding: 1px 5px; border-radius: 8px; font-size: 7px; font-weight: 600;
+}
+.mockup-badge.green  { background: #dcfce7; color: #166534; }
+.mockup-badge.yellow { background: #fef9c3; color: #a16207; }
+.mockup-badge.red    { background: #fee2e2; color: #b91c1c; }
+.mockup-badge.blue   { background: #dbeafe; color: #1d4ed8; }
+
+/* Registration status */
+.mockup-status-row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 0; border-bottom: 1px solid #f0f2f9;
+}
+.mockup-status-row:last-child { border-bottom: none; }
+.mockup-status-icon { font-size: 10px; flex-shrink: 0; }
+.mockup-status-text { flex: 1; color: #1a2540; }
+.mockup-status-sub  { color: #9098a8; font-size: 7px; }
+
+/* Files */
+.mockup-file-row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 0; border-bottom: 1px solid #f0f2f9;
+}
+.mockup-file-row:last-child { border-bottom: none; }
+.mockup-file-icon { width: 16px; height: 18px; background: #dbeafe; border-radius: 2px;
+  display: flex; align-items: center; justify-content: center; font-size: 7px;
+  color: #1d4ed8; font-weight: 700; flex-shrink: 0; }
+.mockup-file-name { flex: 1; color: #1a2540; }
+.mockup-file-date { color: #9098a8; font-size: 7px; }
+
+/* Upload area */
+.mockup-upload-area {
+  border: 1.5px dashed #93c5fd; border-radius: 6px;
+  padding: 12px 8px; text-align: center; color: #6b78a8;
+  background: #eff6ff; margin-bottom: 6px;
+}
+.mockup-upload-icon { font-size: 16px; margin-bottom: 3px; }
+
+/* Country */
+.mockup-country-row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 0; border-bottom: 1px solid #f0f2f9;
+}
+.mockup-country-flag { font-size: 12px; flex-shrink: 0; }
+.mockup-country-name { flex: 1; color: #1a2540; font-weight: 500; }
+.mockup-progress-bar {
+  width: 50px; height: 4px; background: #e4e8f5; border-radius: 2px; overflow: hidden;
+}
+.mockup-progress-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, #1a3c6e, #1e4fa8); }
+
+/* Settings */
+.mockup-setting-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 4px 0; border-bottom: 1px solid #f0f2f9;
+}
+.mockup-setting-row:last-child { border-bottom: none; }
+.mockup-toggle {
+  width: 24px; height: 13px; border-radius: 10px;
+  display: flex; align-items: center; padding: 0 2px; flex-shrink: 0;
+}
+.mockup-toggle.on  { background: #1e4fa8; justify-content: flex-end; }
+.mockup-toggle.off { background: #d4daf0; justify-content: flex-start; }
+.mockup-toggle-knob { width: 9px; height: 9px; background: #fff; border-radius: 50%; }
