@@ -11,7 +11,7 @@ def _tokenize(text: str) -> list[str]:
 
 
 def _build_index(chunks: list[dict]) -> dict:
-    doc_tokens = [_tokenize(c["content"] + " " + c["title"]) for c in chunks]
+    doc_tokens = [_tokenize(c["content"] + " " + (c["title"] + " ") * 3) for c in chunks]
 
     N = len(chunks)
     df: Counter = Counter()
